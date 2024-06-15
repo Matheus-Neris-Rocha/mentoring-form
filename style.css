@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #EFEFEF;
+    font-family: "Poppins", sans-serif;
+}
+
+body::before {
+    content: '';
+    width: 100%;
+    height: 436px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: -1;
+    background: #535971;
+}
+
+.page {
+    width: 750px;
+    margin: auto;
+}
+
+
+h1, h2, h3, legend, button {
+    font-family: "Staatliches", sans-serif;
+}
+
+header h1 {
+    margin-top: 140px;
+    color: #FFF;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+header p {
+    width: 417px;
+    height: 46px;
+
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+
+    margin-top: 18px;
+}
+
+form {
+    min-height: 300px;
+    background: #FFF;
+
+    border-radius: 20px 20px 0px 0px;
+
+    padding: 64px;
+    margin-top: 58px;
+}
+
+fieldset {
+    border: none;
+}
+
+.fieldset-wrapper legend,
+.fieldset-wrapper-mentor legend {
+    color: #535971;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px; 
+
+    margin-bottom: 18px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #E6E6F0;
+}
+
+.fieldset-wrapper-mentor legend {
+    padding-top: 30px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper label {
+    color: #4E4958;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 16px 0 8px
+}
+
+.input-wrapper label span {
+    color: #C1BCCC;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+
+    padding-left: 9px;
+}
+
+.input-wrapper input {
+    height: 56px;
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+    background: #FAFAFC;
+    padding: 12px;
+}
+
+.col-2 {
+    display: flex;  
+    gap: 22px;
+}
+
+.col-2 input {
+    width: 300px;
+}
+
+h2, h3 {
+    color: #535971;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+}
+
+h3 {
+    margin-top: 16px;
+}
+
+.col-3 {
+    display: flex;
+}
+
+.col-3 > div:nth-child(1) {
+    width: 300px;
+    margin-right: 32px;
+}
+
+.col-3 > div:nth-child(2) {
+    width: 140px;
+    margin-right: 10px;
+}
+
+.col-3 > div:nth-child(3) {
+    width: 140px;
+}
+
+footer {
+    height: 160px;
+    border-radius: 0px 0px 20px 20px;
+    background: #535971;
+
+    padding: 52px 71px;
+}
+
+footer button {
+    width: 608px;
+    height: 55px;
+    padding: 15px 40px;
+
+    border-radius: 20px;
+    background: #FF5374;
+
+    border: none;
+
+    color: #FFF;
+    
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+input:invalid {
+    border:  1px solid #FF1010;
+}
